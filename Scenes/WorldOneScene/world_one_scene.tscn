@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyb8px5r2ubqk"]
+
+[ext_resource type="PackedScene" uid="uid://cutjvh1onv5ch" path="res://Scenes/MainPlaneScene/main_plane_scene.tscn" id="1_jm1qc"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_fkk38"]
+
+[sub_resource type="Environment" id="Environment_4lbud"]
+background_mode = 1
+background_color = Color(0.607843, 0.737255, 1, 1)
+fog_light_energy = 3.02
+
+[node name="WorldOneScene" type="Node3D"]
+
+[node name="MainPlane" parent="." instance=ExtResource("1_jm1qc")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.0363, 0, 0)
+mesh = SubResource("BoxMesh_fkk38")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_4lbud")

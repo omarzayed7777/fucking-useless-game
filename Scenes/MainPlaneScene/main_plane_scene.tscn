@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cutjvh1onv5ch"]
+
+[ext_resource type="ArrayMesh" uid="uid://b17b5b6kn12lu" path="res://Assets/MainPlaneFiles/Plane_03.obj" id="1_07v3o"]
+[ext_resource type="Script" path="res://Scenes/MainPlaneScene/main_plane_main_script.gd" id="1_q6fvl"]
+
+[node name="MainPlane" type="Node3D"]
+script = ExtResource("1_q6fvl")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.76369, 3.77605, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.00422374, 0.999991, 0, -0.999991, -0.00422374, 0, 8.77242, 0)
+
+[node name="Visual" type="Node3D" parent="."]
+
+[node name="Plane03" type="MeshInstance3D" parent="Visual"]
+mesh = ExtResource("1_07v3o")
+skeleton = NodePath("../..")
