@@ -2,17 +2,18 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2s6x22e1rjnd"
-path.s3tc="res://.godot/imported/Plane_03.png-18dc09c14076e6a363c96824cf1c38ab.s3tc.ctex"
+uid="uid://dteb4mgede2aa"
+path.s3tc="res://.godot/imported/biPlane-75674da62ec00f59a2e7edb5fafd3a57_387359c5580f06c08c266126b3b46db47e48ba44.png-37ed403e5e9e3f77121a9faaddd36b7b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/MainPlaneFiles/Plane_03.png"
-dest_files=["res://.godot/imported/Plane_03.png-18dc09c14076e6a363c96824cf1c38ab.s3tc.ctex"]
+source_file="res://Assets/MainPlaneAssets/biPlane-75674da62ec00f59a2e7edb5fafd3a57_387359c5580f06c08c266126b3b46db47e48ba44.png"
+dest_files=["res://.godot/imported/biPlane-75674da62ec00f59a2e7edb5fafd3a57_387359c5580f06c08c266126b3b46db47e48ba44.png-37ed403e5e9e3f77121a9faaddd36b7b.s3tc.ctex"]
 
 [params]
 

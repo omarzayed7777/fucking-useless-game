@@ -1,18 +1,14 @@
 extends Node3D
 
-const FORWARD_SPEED = 4.0
-const VERTICAL_SPEED = 2.0
-const LATERAL_SPEED = 2.0
-const LERP_RETURN_FACTOR = 5.0
+const FORWARD_SPEED = 4.0 # The speed in which the plane moves forward
+const VERTICAL_SPEED = 2.0 # The speed in which the plane moves vertically when up or down pressed
+const LATERAL_SPEED = 2.0 # The speed in which the plane moves 'horizontally' when left or right pressed
+const LERP_RETURN_FACTOR = 5.0 # A factor used to make the plane return to its normal rotations at a particular pace
+const PROPELLER_SPEED = 100.0
 
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	position.x += FORWARD_SPEED * delta
-	
+	$Visual/biPlane/RootNode/biplaneProp.rotation.x += PROPELLER_SPEED * delta
 	if Input.is_action_pressed("ui_left"):
 		position.z -= LATERAL_SPEED * delta
 		if $Visual.rotation.x > -PI / 6:
